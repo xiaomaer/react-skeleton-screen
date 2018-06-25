@@ -1,0 +1,107 @@
+/* 骨架屏的样式 */
+
+.waiting-on-data p.with-preview {
+  height: 10px;
+  width: 150px;
+  background: rgba(224, 224, 224, 0.6);
+}
+
+.waiting-on-data .disabled-in-preview {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.preact-image-mask {
+  position: relative;
+  overflow: hidden;
+  background: #e0e0e0;
+}
+
+.preact-image-mask img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.img-placeholder:before,
+.img-placeholder:after {
+  content: ' ';
+  display: block;
+  margin: 0 auto;
+  background: #b2b1b1;
+}
+
+.img-placeholder:before {
+  width: 40%;
+  height: 45%;
+  margin-top: 24%;
+  border-radius: 100%;
+}
+
+.img-placeholder:after {
+  width: 66%;
+  height: 100%;
+  margin-top: -2px;
+  border-radius: 16px 16px 0 0;
+}
+
+/* 页面样式 */
+
+.component {
+  width: 600px;
+  margin: 50px auto;
+  text-align: left;
+  border-radius: 4px;
+  border: 5px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.component .title {
+  background: lightcoral;
+}
+
+.component .title h2 {
+  padding: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.component .component-inner {
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+.component.waiting-on-data p.with-preview {
+  margin: 6px 0;
+}
+
+.block {
+  display: flex;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.block .block-left {
+  width: 30%;
+  text-align: right;
+}
+
+.block .block-right {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 0 0 0 30px;
+  font-family: 'EB Garamond', serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.block strong {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-font-smoothing: antialiased;
+}
